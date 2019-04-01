@@ -7,6 +7,9 @@ TagManager:
   - Wall
   - Flipper
   - PlayingSurface
+  - CanDestroy
+  - Robot
+  - Target
   layers:
   - Default
   - TransparentFX
