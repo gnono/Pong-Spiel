@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public Transform prefab;
 
     void Start()
     {
-        for (int i = 0; i < 1; i++)
+        for (int i = 0; i < 10; i++)
         {
-            Instantiate(enemy);
+            Instantiate(prefab, new Vector3(i * 2.0F, 0, 0), Quaternion.identity);
         }
+
     }
 }

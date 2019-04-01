@@ -7,6 +7,10 @@ public class BallControl : MonoBehaviour
     private Vector3 velocity;
     public float maxZ;
     public float maxX;
+    public GameObject Object;
+    public GameObject ObjectClones;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,6 +22,8 @@ public class BallControl : MonoBehaviour
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
+
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +46,17 @@ public class BallControl : MonoBehaviour
             velocity = new Vector3(-velocity.x, velocity.y, velocity.z);
         }
 
+        if (other.CompareTag("Target"))
+        {
+            Destroy(Object);
+            Destroy(ObjectClones);
+            Debug.Log("Target destroyed");
+
+        }
+
+
         gameObject.GetComponent<AudioSource>().Play();
     }
+
+
 }

@@ -4,16 +4,12 @@ using UnityEngine;
 
 public class ExplosionDestroy : MonoBehaviour
 {
-    public GameObject Object;
-    public GameObject effect;
+
     void OnCollisionEnter(Collision col)
     {
-        if (col.gameObject.tag == "Target")
+        if (col.gameObject.name == "Target")
         {
-            Instantiate(effect, Object.transform.position, Object.transform.rotation);
-            Destroy(Object, 0.2f);
-            Debug.Log("Collision registered and Object destroyed");
+            Destroy(col.gameObject);
         }
     }
-
 }

@@ -29,9 +29,10 @@ public class FlipperController : MonoBehaviour
 
         dir = Input.GetAxis("Horizontal");
         float newPositionX = transform.position.x + dir*speed*Time.deltaTime;
-//        float maxX= (0.5f * PlayingSurface.localScale.x * 10) - 0.5f * transform.localScale.x * 1;
-       // float clampedX = Mathf.Clamp(newPositionX, --maxX, maxX);
+       // float maxX= (0.5f * PlayingSurface.localScale.x * 10) - 0.5f * transform.localScale.x * 1;
+       //float clampedX = Mathf.Clamp(newPositionX, --maxX, maxX);
         transform.position = new Vector3(newPositionX, transform.position.y, transform.position.z);
+
 
     }
 }
