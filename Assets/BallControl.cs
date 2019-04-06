@@ -8,7 +8,8 @@ public class BallControl : MonoBehaviour
     public float maxZ;
     public float maxX;
     public GameObject Object;
-    public GameObject ObjectClones;
+    private int hit;
+
 
 
 
@@ -26,8 +27,13 @@ public class BallControl : MonoBehaviour
 
     }
 
+
+
+
+
     private void OnTriggerEnter(Collider other)
     {
+
 
         if(other.CompareTag("Flipper"))
         {
@@ -49,10 +55,15 @@ public class BallControl : MonoBehaviour
         if (other.CompareTag("Target"))
         {
             Destroy(Object);
-            Destroy(ObjectClones);
-            Debug.Log("Target destroyed");
+            Debug.Log("Target destroyed from Ball control");
+
 
         }
+
+
+
+
+
 
 
         gameObject.GetComponent<AudioSource>().Play();

@@ -5,7 +5,7 @@ public class PhysicalExplosion : MonoBehaviour
 {
     public float Radius;// explosion radius
     public float Force;// explosion forse
-    void OnCollisionEnter()
+    void Update () 
     {
         Collider[] hitColliders = Physics.OverlapSphere(transform.position, Radius);// create explosion
         for(int i=0; i<hitColliders.Length; i++)

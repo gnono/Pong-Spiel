@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     private float currentTime = 0f;
     private float startingTime = 60f;
 
+
     [SerializeField] Text countdownText;
 
     void Start()
@@ -34,5 +35,14 @@ public class Timer : MonoBehaviour
             FirstBall.SetActive(false);
             SecondBall.SetActive(false);
         }
+
+        if ((GameOver != null) && (currentTime <= 50))
+        {
+
+            SecondBall.SetActive(true);
+
+        }
+
+       
     }
 }
