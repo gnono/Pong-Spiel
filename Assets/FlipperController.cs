@@ -16,15 +16,15 @@ public class FlipperController : MonoBehaviour
     void Update()
     {
         float dir = 0;
-        //if (Input.GetKey(KeyCode.A))
-        //{
-        //    dir = -1;
-        //}
+        if (Input.GetKey(KeyCode.A))
+        {
+            dir = -1;
+        }
 
-        //if (Input.GetKey(KeyCode.D))
-        //{
-        //    dir = 1;
-        //}
+        if (Input.GetKey(KeyCode.D))
+        {
+            dir = 1;
+        }
 
 
         dir = Input.GetAxis("Horizontal");

@@ -1,25 +1,25 @@
 ﻿<Properties StartupConfiguration="{E805C57A-A8EC-DA01-E529-B7AA88A8BE89}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/Spawner.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ExplosionDestroy.cs">
     <Files>
-      <File FileName="Assets/ExplosionDestroy.cs" Line="32" Column="1" />
-      <File FileName="Assets/Scenes/Spawner.cs" Line="30" Column="41" />
+      <File FileName="Assets/ExplosionDestroy.cs" Line="45" Column="1" />
+      <File FileName="Assets/Scenes/Spawner.cs" Line="11" Column="30" />
       <File FileName="Assets/Simple Explosion/Scripts/PhysicalExplosion.cs" Line="23" Column="34" />
       <File FileName="Assets/Scenes/Timer.cs" Line="14" Column="1" />
       <File FileName="Assets/Explosion.cs" Line="10" Column="5" />
-      <File FileName="Assets/FlipperController.cs" Line="38" Column="2" />
-      <File FileName="Assets/BallControl.cs" Line="62" Column="9" />
+      <File FileName="Assets/FlipperController.cs" Line="27" Column="10" />
+      <File FileName="Assets/BallControl.cs" Line="44" Column="37" />
+      <File FileName="Assets/Bouncy_Ball.cs" Line="29" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Pong-Spiel" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scenes" expanded="True">
-                <Node name="Spawner.cs" selected="True" />
-              </Node>
+              <Node name="Scenes" expanded="True" />
               <Node name="Simple Explosion" expanded="True">
                 <Node name="Scripts" expanded="True" />
               </Node>
+              <Node name="ExplosionDestroy.cs" selected="True" />
             </Node>
           </Node>
         </State>

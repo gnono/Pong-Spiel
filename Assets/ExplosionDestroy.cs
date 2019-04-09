@@ -6,6 +6,7 @@ public class ExplosionDestroy : MonoBehaviour
 {
     private int hitCounter = 0;
 
+
     void OnTriggerEnter(Collider col)
     {
 
@@ -19,13 +20,20 @@ public class ExplosionDestroy : MonoBehaviour
             if(hitCounter == 1)
             {
 
+                GetComponent<Renderer>().material.color = Color.green;
+            }
+
+            if (hitCounter == 2)
+            {
+
                 GetComponent<Renderer>().material.color = Color.red;
             }
 
 
-            if (hitCounter >= 2) 
+            if (hitCounter >= 3) 
             {
                 Destroy(this.gameObject);
+         
                 Debug.Log("Target clones destroyed from Explosion destroy");
 
             }
