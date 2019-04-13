@@ -1,12 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BallControl : MonoBehaviour
 {
     private Vector3 velocity;
     public float maxZ;
     public float maxX;
+    private int hitCounter;
+    [SerializeField] Text Points;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +25,7 @@ public class BallControl : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
 
         if(other.CompareTag("Flipper"))
         {
@@ -39,6 +43,19 @@ public class BallControl : MonoBehaviour
         {
             velocity = new Vector3(-velocity.x, velocity.y, velocity.z);
         }
+
+        if (other.CompareTag("Target"))
+        {
+           
+            velocity = new Vector3(velocity.x, velocity.y, -velocity.z);
+      
+            hitCounter++;
+            Points.text = "Points: " + hitCounter.ToString();
+            Debug.Log("Points registered");
+
+        }
+
+   
 
         gameObject.GetComponent<AudioSource>().Play();
     }
