@@ -13,9 +13,12 @@ public class Deadzone : MonoBehaviour
 
     public void OnTriggerEnter(Collider col)
         {
-            gameOver.SetActive(true);
-            ball.SetActive(false);
-            paddle.SetActive(false);
-        }
+        //if (col.CompareTag("deadzone")) 
+        //{
+        //    gameOver.SetActive(true);
+        //    ball.SetActive(false);
+        //    paddle.SetActive(false);
+        //}
+    }
        
 }

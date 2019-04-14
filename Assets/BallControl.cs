@@ -9,9 +9,12 @@ public class BallControl : MonoBehaviour
     public float maxZ;
     public float maxX;
     private int hitCounter;
+    private int hitCounterGameOver =3;
     [SerializeField] Text Points;
     [SerializeField] Text Timer;
+    [SerializeField] Text Lives;
     [SerializeField] Text WinMessage;
+    [SerializeField] Text GameOverMessage;
     public GameObject ball;
     public GameObject Paddle;
 
@@ -51,8 +54,10 @@ public class BallControl : MonoBehaviour
         {
             velocity = new Vector3(velocity.x, velocity.y, -velocity.z);
             hitCounter++;
-            Points.text = "Points: " + hitCounter.ToString();
+
+            Points.text = "Points: " + (hitCounter).ToString();
             Debug.Log("Points registered");
+
 
             if(hitCounter >= 81) 
             {
@@ -63,6 +68,24 @@ public class BallControl : MonoBehaviour
 
              
               }
+
+
+        }
+
+        if (other.CompareTag("deadzone"))
+        {
+            velocity = new Vector3(velocity.x, velocity.y, -velocity.z);
+            hitCounterGameOver--;
+            Lives.text = "Lives: " + hitCounterGameOver.ToString();
+
+            if (hitCounterGameOver == 0)
+            {
+
+                GameOverMessage.gameObject.SetActive(true);
+                ball.SetActive(false);
+                Paddle.SetActive(false);
+                Timer.gameObject.SetActive(false);
+            }
 
 
         }
