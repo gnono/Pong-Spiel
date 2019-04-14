@@ -8,6 +8,7 @@ TagManager:
   - Flipper
   - PlayingSurface
   - Target
+  - deadzone
   layers:
   - Default
   - TransparentFX

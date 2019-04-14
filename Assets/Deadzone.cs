@@ -1,11 +1,21 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class DeadZone : MonoBehaviour
+
+
+public class deadzone : MonoBehaviour
 {
 
-    void OnTriggerEnter(Collider col)
-    {
-        GM.instance.LoseLife();
-    }
+    public GameObject gameOver;
+    public GameObject ball;
+    public GameObject paddle;
+
+
+    public void OnTriggerEnter(Collider col)
+        {
+            gameOver.SetActive(true);
+            ball.SetActive(false);
+            paddle.SetActive(false);
+        }
+       
 }

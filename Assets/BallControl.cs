@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallControl : MonoBehaviour
 {
-    private Vector3 velocity;
+    public Vector3 velocity;
     public float maxZ;
     public float maxX;
     private int hitCounter;
