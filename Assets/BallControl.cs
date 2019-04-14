@@ -10,6 +10,10 @@ public class BallControl : MonoBehaviour
     public float maxX;
     private int hitCounter;
     [SerializeField] Text Points;
+    [SerializeField] Text Timer;
+    [SerializeField] Text WinMessage;
+    public GameObject ball;
+    public GameObject Paddle;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +53,16 @@ public class BallControl : MonoBehaviour
             hitCounter++;
             Points.text = "Points: " + hitCounter.ToString();
             Debug.Log("Points registered");
+
+            if(hitCounter >= 81) 
+            {
+                WinMessage.gameObject.SetActive(true);
+                ball.SetActive(false);
+                Paddle.SetActive(false);
+                Timer.gameObject.SetActive(false);
+
+             
+              }
 
 
         }
