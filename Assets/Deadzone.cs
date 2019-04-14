@@ -3,7 +3,7 @@ using System.Collections;
 
 
 
-public class deadzone : MonoBehaviour
+public class Deadzone : MonoBehaviour
 {
 
     public GameObject gameOver;
