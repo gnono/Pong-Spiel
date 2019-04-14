@@ -64,6 +64,7 @@
     <Compile Include="Assets\Deadzone.cs" />
     <Compile Include="Assets\ExplosionDestroy.cs" />
     <Compile Include="Assets\FlipperController.cs" />
+    <Compile Include="Assets\Timer.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/ghislainstevenono/Spielentwicklungsprojekte/Pong Spiel/Pong-Spiel/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
