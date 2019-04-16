@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
     public GameObject FirstBall;
     public GameObject Paddle;
     private float currentTime = 0f;
-    private float startingTime = 600f;
+    private float startingTime = 120f;
 
 
     [SerializeField] Text countdownText;
