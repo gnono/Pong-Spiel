@@ -627,12 +627,17 @@ MonoBehaviour:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
 <<<<<<< refs/remotes/origin/thierry_develop
+<<<<<<< refs/remotes/origin/thierry_develop
       m_SelectedIDs: 4a320000
       m_LastClickedID: 12874
       m_ExpandedIDs: d2f0ffff90330000
 =======
       m_SelectedIDs: 3e0d0000
       m_LastClickedID: 3390
+=======
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+>>>>>>> test
       m_ExpandedIDs: d6fbffff
 >>>>>>> test commit
       m_RenameOverlay:
