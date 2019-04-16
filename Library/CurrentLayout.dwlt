@@ -15,6 +15,7 @@ MonoBehaviour:
   m_PixelRect:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     y: 45
     width: 2560
     height: 1316
@@ -22,6 +23,15 @@ MonoBehaviour:
   m_Title: 
   m_RootView: {fileID: 7}
   m_MinSize: {x: 950, y: 374}
+=======
+    y: 43.2
+    width: 1536
+    height: 781
+  m_ShowMode: 4
+  m_Title: 
+  m_RootView: {fileID: 6}
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> New Features:
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -38,6 +48,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 1529
     y: 0
     width: 512
@@ -45,6 +56,15 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
   m_ActualView: {fileID: 18}
+=======
+    x: 800
+    y: 0
+    width: 298
+    height: 731
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+  m_ActualView: {fileID: 15}
+>>>>>>> New Features:
   m_Panes:
   - {fileID: 18}
   m_Selected: 0
@@ -68,12 +88,21 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
+<<<<<<< refs/remotes/origin/thierry_develop
     width: 2560
     height: 1266
   m_MinSize: {x: 881, y: 324}
   m_MaxSize: {x: 16006, y: 8024}
   vertical: 0
   controlID: 85
+=======
+    width: 1536
+    height: 731
+  m_MinSize: {x: 887, y: 224}
+  m_MaxSize: {x: 16012, y: 4024}
+  vertical: 0
+  controlID: 90
+>>>>>>> New Features:
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -89,6 +118,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 2041
     y: 0
     width: 519
@@ -96,6 +126,15 @@ MonoBehaviour:
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
+=======
+    x: 1098
+    y: 0
+    width: 438
+    height: 731
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 12}
+>>>>>>> New Features:
   m_Panes:
   - {fileID: 15}
   m_Selected: 0
@@ -117,11 +156,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     width: 505
     height: 766
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 16}
+=======
+    width: 202
+    height: 731
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+  m_ActualView: {fileID: 13}
+>>>>>>> New Features:
   m_Panes:
   - {fileID: 16}
   m_Selected: 0
@@ -135,6 +182,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+<<<<<<< refs/remotes/origin/thierry_develop
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -162,6 +210,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
+=======
+>>>>>>> New Features:
   m_Script: {fileID: 12008, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
@@ -173,9 +223,15 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     width: 2560
     height: 1316
   m_MinSize: {x: 950, y: 374}
+=======
+    width: 1536
+    height: 781
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> New Features:
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &8
 MonoBehaviour:
@@ -215,6 +271,7 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     y: 1296
     width: 2560
     height: 20
@@ -246,6 +303,14 @@ MonoBehaviour:
   vertical: 1
   controlID: 86
 --- !u!114 &11
+=======
+    y: 761
+    width: 1536
+    height: 20
+  m_MinSize: {x: 0, y: 0}
+  m_MaxSize: {x: 0, y: 0}
+--- !u!114 &9
+>>>>>>> New Features:
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -265,6 +330,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     width: 2041
     height: 766
   m_MinSize: {x: 606, y: 224}
@@ -272,6 +338,15 @@ MonoBehaviour:
   vertical: 0
   controlID: 87
 --- !u!114 &12
+=======
+    width: 1098
+    height: 731
+  m_MinSize: {x: 610, y: 224}
+  m_MaxSize: {x: 12010, y: 4024}
+  vertical: 0
+  controlID: 159
+--- !u!114 &10
+>>>>>>> New Features:
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,6 +361,7 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 505
     y: 0
     width: 1024
@@ -293,6 +369,15 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 17}
+=======
+    x: 202
+    y: 0
+    width: 598
+    height: 731
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+  m_ActualView: {fileID: 14}
+>>>>>>> New Features:
   m_Panes:
   - {fileID: 17}
   - {fileID: 13}
@@ -324,6 +409,7 @@ MonoBehaviour:
     width: 973
     height: 501
   m_PersistentViewDataDictionary: {fileID: 0}
+<<<<<<< refs/remotes/origin/thierry_develop
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -459,6 +545,9 @@ MonoBehaviour:
     m_GridSize: 64
   m_DirectoriesAreaWidth: 115
 --- !u!114 &15
+=======
+--- !u!114 &12
+>>>>>>> New Features:
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -479,10 +568,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 2041
     y: 75
     width: 517
     height: 1246
+=======
+    x: 1098.4
+    y: 73.6
+    width: 436
+    height: 711
+>>>>>>> New Features:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
@@ -515,16 +611,26 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     y: 75
     width: 503
     height: 746
+=======
+    y: 73.6
+    width: 200
+    height: 711
+>>>>>>> New Features:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
+<<<<<<< refs/remotes/origin/thierry_develop
       m_ExpandedIDs: e8f7ffffda2f0000
+=======
+      m_ExpandedIDs: d6fbffff1c0d0000
+>>>>>>> New Features:
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -547,8 +653,13 @@ MonoBehaviour:
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< refs/remotes/origin/thierry_develop
   m_WindowGUID: 4e462b11964934545b9948c7e1271321
 --- !u!114 &17
+=======
+  m_WindowGUID: 46223b4bd1351fe48b86839d9f1236b4
+--- !u!114 &14
+>>>>>>> New Features:
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
@@ -569,20 +680,35 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 505
     y: 75
     width: 1020
     height: 746
   m_PersistentViewDataDictionary: {fileID: 0}
   m_WindowGUID: afbb9577e74c74a379940a23abf08689
+=======
+    x: 202.40001
+    y: 73.6
+    width: 594
+    height: 711
+  m_PersistentViewDataDictionary: {fileID: 0}
+  m_WindowGUID: 93026e3725d6ca64e850f01ccc298436
+>>>>>>> New Features:
   m_SceneLighting: 1
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< refs/remotes/origin/thierry_develop
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: -0.68193126, y: -0.41171876, z: -0.39229095}
+    speed: 2
+    m_Value: {x: -0.68193126, y: -0.41171876, z: -0.39229095}
+>>>>>>> New Features:
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -610,6 +736,7 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
+<<<<<<< refs/remotes/origin/thierry_develop
     m_Target: {x: 0.4113, y: 0.008203322, z: -0.0037017954, w: 0.91145563}
     speed: 2
     m_Value: {x: 0.4113, y: 0.008203322, z: -0.0037017954, w: 0.91145563}
@@ -617,10 +744,19 @@ MonoBehaviour:
     m_Target: 3450.3079
     speed: 2
     m_Value: 3450.3079
-  m_Ortho:
-    m_Target: 0
+=======
+    m_Target: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
     speed: 2
-    m_Value: 0
+    m_Value: {x: -0.7071068, y: -0, z: 0, w: -0.7071068}
+  m_Size:
+    m_Target: 18.180132
+    speed: 2
+    m_Value: 18.180132
+>>>>>>> New Features:
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
   m_ShowGlobalGrid: 1
   m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
   m_LastSceneViewOrtho: 0
@@ -649,10 +785,17 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
     x: 1529
     y: 75
     width: 508
     height: 746
+=======
+    x: 800
+    y: 73.6
+    width: 294
+    height: 711
+>>>>>>> New Features:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_MaximizeOnPlay: 0
   m_Gizmos: 0
@@ -664,16 +807,27 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     m_HBaseRangeMin: -127
     m_HBaseRangeMax: 127
     m_VBaseRangeMin: -182.25
     m_VBaseRangeMax: 182.25
+=======
+    m_HBaseRangeMin: -117.6
+    m_HBaseRangeMax: 117.6
+    m_VBaseRangeMin: -73.6
+    m_VBaseRangeMax: 73.6
+>>>>>>> New Features:
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
+<<<<<<< refs/remotes/origin/thierry_develop
     m_HSlider: 0
+=======
+    m_HSlider: 1
+>>>>>>> New Features:
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
@@ -685,25 +839,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 17
+<<<<<<< refs/remotes/origin/thierry_develop
       width: 508
       height: 729
     m_Scale: {x: 2, y: 2}
     m_Translation: {x: 254, y: 364.5}
+=======
+      width: 294
+      height: 694
+    m_Scale: {x: 1.5235195, y: 1.5235193}
+    m_Translation: {x: 172.38261, y: 347}
+>>>>>>> New Features:
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
+<<<<<<< refs/remotes/origin/thierry_develop
       x: -127
       y: -182.25
       width: 254
       height: 364.5
+=======
+      x: -113.14762
+      y: -227.76213
+      width: 192.97423
+      height: 455.52426
+>>>>>>> New Features:
     m_MinimalGUI: 1
   m_defaultScale: 2
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
+<<<<<<< refs/remotes/origin/thierry_develop
   m_LastWindowPixelSize: {x: 1016, y: 1492}
+=======
+  m_LastWindowPixelSize: {x: 367.5, y: 888.75}
+>>>>>>> New Features:
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000100000100

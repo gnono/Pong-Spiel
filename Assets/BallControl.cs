@@ -10,20 +10,32 @@ public class BallControl : MonoBehaviour
     public float maxX;
     private int hitCounter;
     private int hitCounterGameOver =3;
+    private int pointCounter = 5;
     [SerializeField] Text Points;
     [SerializeField] Text Timer;
     [SerializeField] Text Lives;
     [SerializeField] Text WinMessage;
     [SerializeField] Text GameOverMessage;
     public GameObject ball;
+    
     public Transform paddle;
     public bool inPlay;
     public AudioSource beep;
     public AudioSource gameO;
     public AudioSource win;
+    public AudioSource power;
     bool beepPlay=false;
 
-  
+
+    public float speed = 1f;
+    bool fast = false;
+
+    public FlipperController fc = new FlipperController();
+
+
+   
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,21 +48,34 @@ public class BallControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += velocity * Time.deltaTime;
+        if(fast == true)
+        {
+            transform.position += velocity *( speed /5) * Time.deltaTime;
+            
+        }
+
+        if(fast == false)
+        {
+            transform.position += velocity * Time.deltaTime;
+
+        }
+
+          //  transform.position += velocity * Time.deltaTime ;
         if (!inPlay)
         {
             transform.position = paddle.position;
         }
 
-        if (Input.GetButtonDown("Jump") )
-       {
-           inPlay = true;
-           velocity = new Vector3(0, 0, maxZ);
+        if (Input.GetButtonDown("Jump"))
+        {
+            inPlay = true;
+            velocity = new Vector3(0, 0, maxZ);
             beepPlay = true;
-            
-        }
-    }
 
+        }
+
+
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (!beepPlay)
@@ -85,7 +110,7 @@ public class BallControl : MonoBehaviour
             Debug.Log("Points registered");
 
 
-            if(hitCounter >= 81) 
+            if(hitCounter >= 81 ) 
             {
                 WinMessage.gameObject.SetActive(true);
                 ball.SetActive(false);
@@ -96,6 +121,19 @@ public class BallControl : MonoBehaviour
              
               }
 
+             if(hitCounter == 20)
+            { 
+                fc.transform.localScale += new Vector3(4F, 0, 0);
+                fast = true;
+                power.Play();
+            }
+        
+            if (hitCounter == 50)
+            {
+                fast = false;
+                fc.transform.localScale += new Vector3(-4F, 0, 0);
+
+            }
 
         }
 

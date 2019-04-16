@@ -10,7 +10,12 @@ public class Timer : MonoBehaviour
     public GameObject FirstBall;
     public GameObject Paddle;
     private float currentTime = 0f;
+<<<<<<< refs/remotes/origin/thierry_develop
     private float startingTime = 120f;
+=======
+    private float startingTime = 600f;
+    
+>>>>>>> New Features:
 
 
     [SerializeField] Text countdownText;
@@ -38,8 +43,7 @@ public class Timer : MonoBehaviour
 
         }
 
-
-
-
     }
+
+   
 }
