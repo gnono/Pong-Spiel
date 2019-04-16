@@ -16,24 +16,50 @@ public class BallControl : MonoBehaviour
     [SerializeField] Text WinMessage;
     [SerializeField] Text GameOverMessage;
     public GameObject ball;
-    public GameObject Paddle;
+    public Transform paddle;
+    public bool inPlay;
+    public AudioSource beep;
+    public AudioSource gameO;
+    public AudioSource win;
+    bool beepPlay=false;
+
+  
 
     // Start is called before the first frame update
     void Start()
     {
-        velocity = new Vector3(0, 0, maxZ);
+        
+        
+        //velocity = new Vector3(0, 0, maxZ);
     }
 
     // Update is called once per frame
     void Update()
     {
         transform.position += velocity * Time.deltaTime;
+        if (!inPlay)
+        {
+            transform.position = paddle.position;
+        }
+
+        if (Input.GetButtonDown("Jump") )
+       {
+           inPlay = true;
+           velocity = new Vector3(0, 0, maxZ);
+            beepPlay = true;
+            
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
+        if (!beepPlay)
+        {
+            beep.Stop();
+        }
+        
 
-        if(other.CompareTag("Flipper"))
+        if (other.CompareTag("Flipper"))
         {
         Transform ball = transform;
         Transform Flipper = other.transform;
@@ -63,7 +89,8 @@ public class BallControl : MonoBehaviour
             {
                 WinMessage.gameObject.SetActive(true);
                 ball.SetActive(false);
-                Paddle.SetActive(false);
+                win.Play();
+               // paddle.SetActive(false);
                 Timer.gameObject.SetActive(false);
 
              
@@ -74,24 +101,31 @@ public class BallControl : MonoBehaviour
 
         if (other.CompareTag("deadzone"))
         {
-            velocity = new Vector3(velocity.x, velocity.y, -velocity.z);
+           // velocity = new Vector3(velocity.x, velocity.y, -velocity.z);
+            
+            inPlay = false;
+            beepPlay = false;
+            beep.Stop();
+
             hitCounterGameOver--;
             Lives.text = "Lives: " + hitCounterGameOver.ToString();
 
             if (hitCounterGameOver == 0)
             {
-
                 GameOverMessage.gameObject.SetActive(true);
                 ball.SetActive(false);
-                Paddle.SetActive(false);
+                gameO.Play();
+                
+                //paddle.SetActive(false);
                 Timer.gameObject.SetActive(false);
             }
 
 
         }
-
-
-
-        gameObject.GetComponent<AudioSource>().Play();
+        if (beepPlay==true)
+        {
+            beep.Play();
+        }
+       // 
     }
 }

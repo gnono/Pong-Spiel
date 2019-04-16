@@ -9,6 +9,7 @@ TagManager:
   - PlayingSurface
   - Target
   - deadzone
+  - ball
   layers:
   - Default
   - TransparentFX
